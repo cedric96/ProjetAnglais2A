@@ -15,8 +15,8 @@ public class WelcomeViewControler implements mainControler{
 	
 	@FXML
 	private Label erreur;
-	@FXML
-	Label welcome1;
+	//@FXML
+	//Label welcome1;
 	@FXML
 	Label welcome2;
 	
@@ -29,15 +29,15 @@ public class WelcomeViewControler implements mainControler{
 	@Override
 	public void initialize(MainWindow main) {
 		this.main=main;
-		welcome1.setText("  Boosting your Culture");
-		welcome2.setText(" by Learning english");
+		//welcome1.setText("  Boosting your Culture");
+		welcome2.setText(" Do You Speak ENGLISH ? ");
 	
 		
 		
-		welcome1.setFont(Font.loadFont("file:police/accueil.TTF", 40));
-		welcome2.setFont(Font.loadFont("file:police/accueil.TTF", 40));
+		//welcome1.setFont(Font.loadFont("file:police/accueil.TTF", 40));
+		//welcome2.setFont(Font.loadFont("file:police/accueil.TTF", 40));
 		
-		welcome1.setWrapText(true);
+	//	welcome1.setWrapText(true);
 		
 	}
 	
