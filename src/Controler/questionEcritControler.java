@@ -191,4 +191,8 @@ public class questionEcritControler implements mainControler {
 		check();
 	}
 	
+	public void backMenu(){
+		main.changeScene(1);
+	}
+	
 }

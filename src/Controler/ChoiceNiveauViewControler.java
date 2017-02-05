@@ -87,6 +87,11 @@ public class ChoiceNiveauViewControler implements mainControler {
 		
 	}
 	
+	//pour le retour au menu
+	public void backMenu(){
+		main.changeScene(1);
+	}
+	
 	
 	
 	
