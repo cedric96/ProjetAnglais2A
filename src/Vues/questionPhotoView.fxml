@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controler.questionPhotoControler">
+   <children>
+      <Label fx:id="erreur" focusTraversable="false" layoutX="344.0" layoutY="-13.0" prefHeight="34.0" prefWidth="248.0" text="Cochez une seule reponse svp!" textFill="#fc0000" visible="false" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <CheckBox fx:id="case1" focusTraversable="false" layoutX="223.0" layoutY="288.0" mnemonicParsing="false" onAction="#case1" prefHeight="21.0" prefWidth="18.0" />
+      <CheckBox fx:id="case2" focusTraversable="false" layoutX="576.0" layoutY="288.0" mnemonicParsing="false" onAction="#case2" prefHeight="21.0" prefWidth="21.0" />
+      <CheckBox fx:id="case3" focusTraversable="false" layoutX="223.0" layoutY="344.0" mnemonicParsing="false" onAction="#case3" prefHeight="34.0" prefWidth="21.0" />
+      <TextArea fx:id="question" editable="false" focusTraversable="false" layoutX="351.0" layoutY="35.0" prefHeight="221.0" prefWidth="248.0" wrapText="true">
+         <font>
+            <Font name="Script MT Bold" size="30.0" />
+         </font></TextArea>
+      <TextField fx:id="rep1" alignment="CENTER" editable="false" focusTraversable="false" layoutX="9.0" layoutY="275.0" prefHeight="30.0" prefWidth="204.0">
+         <font>
+            <Font name="Sakkal Majalla" size="21.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="rep2" alignment="CENTER" editable="false" focusTraversable="false" layoutX="350.0" layoutY="273.0" prefHeight="51.0" prefWidth="212.0">
+         <font>
+            <Font name="Sakkal Majalla" size="22.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="rep3" alignment="CENTER" editable="false" focusTraversable="false" layoutX="9.0" layoutY="335.0" prefHeight="51.0" prefWidth="204.0">
+         <font>
+            <Font name="Sakkal Majalla" size="22.0" />
+         </font>
+      </TextField>
+      <Label fx:id="juste" alignment="TOP_LEFT" focusTraversable="false" layoutX="386.0" layoutY="-11.0" prefHeight="30.0" prefWidth="248.0" text="Bonne Reponse !" textFill="#22ee0b" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="faux" focusTraversable="false" layoutX="386.0" layoutY="-15.0" prefHeight="30.0" prefWidth="273.0" text="Mauvaise Reponse !" textFill="#fc0505" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="next" focusTraversable="false" layoutX="456.0" layoutY="348.0" mnemonicParsing="false" onAction="#next" prefHeight="34.0" prefWidth="85.0" text="next">
+         <font>
+            <Font name="Californian FB" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imageView" fitHeight="276.0" fitWidth="356.0" layoutX="-12.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
