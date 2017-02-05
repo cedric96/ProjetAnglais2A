@@ -70,6 +70,7 @@ public class MainWindow extends Application {
             // Show the scene containing the root layout.
             Scene scene = new Scene(RacineAnglais);
             primaryStage.setScene(scene);
+           
             primaryStage.show();
             primaryStage.setResizable(false);
             controller = loader.getController();
