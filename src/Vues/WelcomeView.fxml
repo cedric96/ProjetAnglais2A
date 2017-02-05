@@ -30,7 +30,7 @@
          <effect>
             <DropShadow color="#4d4d35cf" />
          </effect></Button>
-      <Label fx:id="welcome2" alignment="CENTER" blendMode="MULTIPLY" cache="true" cacheHint="SPEED" contentDisplay="CENTER" layoutX="55.0" layoutY="58.0" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="129.0" prefWidth="491.0" text="vgyf" textAlignment="JUSTIFY" textFill="#0c5955eb" textOverrun="WORD_ELLIPSIS" AnchorPane.bottomAnchor="263.0" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="54.0" AnchorPane.topAnchor="58.0">
+      <Label fx:id="welcome2" alignment="CENTER" blendMode="MULTIPLY" cache="true" cacheHint="SPEED" contentDisplay="CENTER" layoutX="55.0" layoutY="48.0" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="144.0" prefWidth="590.0" text="vgyf" textAlignment="JUSTIFY" textFill="#0c5955eb" textOverrun="WORD_ELLIPSIS" AnchorPane.bottomAnchor="303.0" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="54.0" AnchorPane.topAnchor="48.0">
          <font>
             <Font name="Trebuchet MS Bold" size="42.0" />
          </font>
