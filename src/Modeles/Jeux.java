@@ -12,6 +12,8 @@ public class Jeux {
 	/*les listes questions... contienent toutes les questions contenues dans le CSV
 	 * 
 	 */
+	
+	/*prendra les valeurs questionEcrites,questionOrales,questionOrales,questionPhoto*/
 	ArrayList<Question> questionChoisies=new ArrayList<Question>();
 	public int typeDeQuestions;/*poure faire un Jeux ecrit, jeux oral ou JeuxPhoto*/
 	/*1 pour ecrites;2 pour oral;3 pour photo;*/
