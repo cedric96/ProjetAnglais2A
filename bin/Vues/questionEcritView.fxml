@@ -31,7 +31,7 @@
       <Label alignment="CENTER" layoutX="123.0" layoutY="236.0" prefHeight="42.0" prefWidth="85.0" text="Answer 1 :" wrapText="true" />
       <Label alignment="CENTER" layoutX="123.0" layoutY="293.0" prefHeight="42.0" prefWidth="85.0" text="Answer 2 :" textAlignment="CENTER" wrapText="true" />
       <Label alignment="CENTER" layoutX="123.0" layoutY="351.0" prefHeight="42.0" prefWidth="85.0" text="Answer 3 :" wrapText="true" />
-      <TextArea fx:id="question" editable="false" focusTraversable="false" layoutX="67.0" layoutY="41.0" prefHeight="90.0" prefWidth="482.0" text="sfd" wrapText="true">
+      <TextArea fx:id="question" editable="false" focusTraversable="false" layoutX="115.0" layoutY="41.0" prefHeight="90.0" prefWidth="482.0" text="sfd" wrapText="true">
          <font>
             <Font name="Trebuchet MS" size="22.0" />
          </font></TextArea>
@@ -60,7 +60,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Button fx:id="next" focusTraversable="false" layoutX="540.0" layoutY="394.0" mnemonicParsing="false" onAction="#next" prefHeight="34.0" prefWidth="85.0" text="Next" textFill="#428b8c">
+      <Button fx:id="next" focusTraversable="false" layoutX="540.0" layoutY="394.0" mnemonicParsing="false" onAction="#next" prefHeight="34.0" prefWidth="85.0" text="Next" textFill="#0ee8e8">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
