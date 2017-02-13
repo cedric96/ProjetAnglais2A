@@ -52,9 +52,9 @@ public class ChoiceNiveauViewControler implements mainControler {
 		choose.setFont(Font.loadFont("file:police/choose.ttf", 30));
 		
 		/*creation du jeux de questions*/
-		main.jeu.faireJeuxEcrit();
-		main.jeu.faireJeuxOral();
-		main.jeu.faireJeuxPhoto();
+		//main.jeu.faireJeuxEcrit();
+		//main.jeu.faireJeuxOral();
+		//main.jeu.faireJeuxPhoto();
 		
 		//on remets les points a 0
 		main.jeu.Points=0;

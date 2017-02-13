@@ -48,7 +48,7 @@ public class VueResumeControler implements mainControler {
 			bravo.setText("Congrats      ");
 		}
 		nom.setText(main.joueur.getName()+" !");
-		point.setText(""+main.jeu.Points+ "/30");
+		point.setText(""+main.jeu.Points+ "/25");
 	}
 	
 	public void quitter(){

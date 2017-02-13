@@ -40,8 +40,8 @@ public class Jeux {
 		// TODO Auto-generated constructor stub
 		try {
 			exportQuestionsEcrites("testEcrit.csv");
-			exportQuestionsOrales("testAudio.csv");
-			exportQuestionsPhotos("testPhoto.csv");
+			//exportQuestionsOrales("testAudio.csv");
+			//exportQuestionsPhotos("testPhoto.csv");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -57,7 +57,7 @@ public class Jeux {
 			String reponse1=getSsid(lineWifi,1);
 			String reponse2=getSsid(lineWifi,2);
 			String reponse3=getSsid(lineWifi,3);
-			//System.out.println(getSsid(lineWifi,4));
+			System.out.println(getSsid(lineWifi,4));
 			int numBonneRep=Integer.parseInt(getSsid(lineWifi,4));
 			
 			Question ecrite=new Question(intitule,reponse1,reponse2,reponse3,numBonneRep);
@@ -102,12 +102,12 @@ public class Jeux {
 		int min=0;//l'indice minimum pour un niveau
 		if (niveau==1){
 			//pour le niveau 1 on prends les quetions de 0 à 9
-			max=9;min=0;
+			max=19;min=0;
 		}else if (niveau==2){
-			max=19;min=10;
+			max=39;min=20;
 		}
 		else if (niveau==3){
-			max=29;min=20;
+			max=59;min=40;
 		}
 		while (compteur<5){
 			int nbreAlea;
@@ -266,7 +266,7 @@ public static void exportQuestionsPhotos(String nomFichier) throws IOException{
 	
 	private static String getSsid (String line,int positionDansLigne){
 		Scanner sc = new Scanner(line);
-		sc.useDelimiter(",");
+		sc.useDelimiter(";");
 		int i=0;
 		while (i<positionDansLigne){
 			sc.next();

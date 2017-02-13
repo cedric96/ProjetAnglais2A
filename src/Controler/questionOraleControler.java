@@ -213,4 +213,8 @@ public class questionOraleControler implements mainControler {
     	}
 	}
 	
+	public void backMenu(){
+		main.changeScene(1);
+	}
+	
 }
