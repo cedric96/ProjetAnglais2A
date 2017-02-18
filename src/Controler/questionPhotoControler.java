@@ -82,7 +82,7 @@ public class questionPhotoControler implements mainControler {
 		//System.out.println("QuestionCourante :"+questCourante.getIntitule());
 		//on instancie la musique
 		System.out.println(questCourante.getLienFichier());
-		 Image image = new Image("File:fileImage/"+questCourante.getLienFichier()); 
+		 Image image = new Image("File:images/"+questCourante.getLienFichier()); 
 		 imageView.setImage(image);
 		 
 		 
@@ -165,7 +165,7 @@ public class questionPhotoControler implements mainControler {
 		}
 		else{
 			//System.out.println("Point "+main.jeu.Points);
-			main.changeScene(2);
+			main.changeScene(3);
 		}
 		
 	}

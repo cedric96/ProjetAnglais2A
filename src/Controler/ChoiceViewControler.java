@@ -86,6 +86,7 @@ public class ChoiceViewControler implements mainControler {
 	}
 	public void photo(){
 		//main.changeScene(3,0);
+		//main.jeu.faireJeuxPhoto();
 		main.jeu.setQuestionChoisies(3);
 		main.jeu.setTypeDeQuestions(3);
 		//listChoice.setCellFactory(ComboBoxListCell.forListView(items));

@@ -41,7 +41,7 @@ public class Jeux {
 		try {
 			exportQuestionsEcrites("testEcrit.csv");
 			//exportQuestionsOrales("testAudio.csv");
-			//exportQuestionsPhotos("testPhoto.csv");
+			exportQuestionsPhotos("culture.csv");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -57,7 +57,7 @@ public class Jeux {
 			String reponse1=getSsid(lineWifi,1);
 			String reponse2=getSsid(lineWifi,2);
 			String reponse3=getSsid(lineWifi,3);
-			System.out.println(getSsid(lineWifi,4));
+			
 			int numBonneRep=Integer.parseInt(getSsid(lineWifi,4));
 			
 			Question ecrite=new Question(intitule,reponse1,reponse2,reponse3,numBonneRep);
@@ -88,27 +88,47 @@ public class Jeux {
 	/*test niveau*/
 	public  void faireJeux(ArrayList<Question>QuestionsChoisies,int niveau){
 		ArrayList<Question> typeDeJeux=new ArrayList<Question>() ;
-		if(typeDeQuestions==1){
-			typeDeJeux=JeuxEcrits;
-		}else if (typeDeQuestions==2){
-			typeDeJeux=JeuxOral;
-		}else if (typeDeQuestions==3){
-			typeDeJeux=JeuxPhotos;
-		}
-		typeDeJeux.clear();
-		ArrayList<Integer> nbresGenere=new ArrayList<Integer>();
 		int compteur=0;
 		int max=0;//l'indice maximum pour un niveau
 		int min=0;//l'indice minimum pour un niveau
-		if (niveau==1){
-			//pour le niveau 1 on prends les quetions de 0 à 9
-			max=19;min=0;
-		}else if (niveau==2){
-			max=39;min=20;
+		if(typeDeQuestions==1){
+			typeDeJeux=JeuxEcrits;
+			if (niveau==1){
+				//pour le niveau 1 on prends les quetions de 0 à 9
+				max=19;min=0;
+			}else if (niveau==2){
+				max=39;min=20;
+			}
+			else if (niveau==3){
+				max=59;min=40;
+			}
+		}else if (typeDeQuestions==2){
+			typeDeJeux=JeuxOral;
+			if (niveau==1){
+				//pour le niveau 1 on prends les quetions de 0 à 9
+				max=0;min=9;
+			}else if (niveau==2){
+				max=10;min=19;
+			}
+			else if (niveau==3){
+				max=20;min=29;
+			}
+		}else if (typeDeQuestions==3){
+			typeDeJeux=JeuxPhotos;
+			if (niveau==1){
+				//pour le niveau 1 on prends les quetions de 0 à 9
+				max=0;min=9;
+			}else if (niveau==2){
+				max=10;min=19;
+			}
+			else if (niveau==3){
+				max=20;min=29;
+			}
 		}
-		else if (niveau==3){
-			max=59;min=40;
-		}
+		typeDeJeux.clear();
+		ArrayList<Integer> nbresGenere=new ArrayList<Integer>();
+		
+		
 		while (compteur<5){
 			int nbreAlea;
 			do{
@@ -149,11 +169,13 @@ public static void exportQuestionsOrales(String nomFichier) throws IOException{
 		ArrayList<Integer> nbresGenere=new ArrayList<Integer>();
 		int compteur=0;
 		//a modifier
+		int min=0;
+		int max=6;
 		while (compteur<5){
 			int nbreAlea;
 			do{
 				//il y a un 5 a modifier ici
-				 nbreAlea= 0 + (int)(Math.random() * ((6- 0) + 1));
+				nbreAlea=min + (int)(Math.random() * ((max - min) + 1));
 			}while(nbresGenere.contains(nbreAlea));
 			nbresGenere.add(nbreAlea);
 			JeuxOral.add(questionOrales.get(nbreAlea));
@@ -173,7 +195,7 @@ public static void exportQuestionsPhotos(String nomFichier) throws IOException{
 			String reponse1=getSsid(lineWifi,2);
 			String reponse2=getSsid(lineWifi,3);
 			String reponse3=getSsid(lineWifi,4);
-			//System.out.println(getSsid(lineWifi,5));
+			//System.out.println(getSsid(lineWifi,0));
 			int numBonneRep=Integer.parseInt(getSsid(lineWifi,5));
 			
 			Question photo=new Question(fichier,intitule,reponse1,reponse2,reponse3,numBonneRep);
@@ -189,11 +211,13 @@ public static void exportQuestionsPhotos(String nomFichier) throws IOException{
 	ArrayList<Integer> nbresGenere=new ArrayList<Integer>();
 	int compteur=0;
 	//a modifier
+	int min=0;
+	int max=18;
 	while (compteur<5){
 		int nbreAlea;
 		do{
 			//il y a un 5 a modifier ici
-			 nbreAlea= 0 + (int)(Math.random() * ((6- 0) + 1));
+			nbreAlea=min + (int)(Math.random() * ((max - min) + 1));
 		}while(nbresGenere.contains(nbreAlea));
 		nbresGenere.add(nbreAlea);
 		JeuxPhotos.add(questionPhotos.get(nbreAlea));

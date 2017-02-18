@@ -69,7 +69,7 @@ public class ChoiceNiveauViewControler implements mainControler {
 		//listChoice.setCellFactory(ComboBoxListCell.forListView(items));
 		System.out.println("maman level 1");
 		main.jeu.faireJeux(QuestionsChoisies,1);
-		main.changeScene(1,0);
+		main.changeScene(main.jeu.getTypeDeQuestions(),0);
 		
 	}
 	public void level2(){
@@ -77,12 +77,12 @@ public class ChoiceNiveauViewControler implements mainControler {
 		//listChoice.setCellFactory(ComboBoxListCell.forListView(items));
 		System.out.println("maman level 2");
 		main.jeu.faireJeux(QuestionsChoisies,2);
-		main.changeScene(1,0);
+		main.changeScene(main.jeu.getTypeDeQuestions(),0);
 	}
 	public void level3(){
 		System.out.println("maman level 3");
 		main.jeu.faireJeux(QuestionsChoisies,3);
-		main.changeScene(1,0);
+		main.changeScene(main.jeu.getTypeDeQuestions(),0);
 	
 		
 	}
