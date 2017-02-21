@@ -117,12 +117,12 @@ public class Jeux {
 			typeDeJeux=JeuxPhotos;
 			if (niveau==1){
 				//pour le niveau 1 on prends les quetions de 0 à 9
-				max=0;min=9;
+				max=9;min=0;
 			}else if (niveau==2){
-				max=10;min=19;
+				max=19;min=10;
 			}
 			else if (niveau==3){
-				max=20;min=29;
+				max=29;min=20;
 			}
 		}
 		typeDeJeux.clear();
@@ -190,6 +190,7 @@ public static void exportQuestionsPhotos(String nomFichier) throws IOException{
 		BufferedReader  fichierWifi= new BufferedReader (new FileReader(nomFichier));
 		String lineWifi=fichierWifi.readLine();
 		while (lineWifi!=null){
+			System.out.println();
 			String fichier=getSsid(lineWifi,0);
 			String intitule=getSsid(lineWifi,1);
 			String reponse1=getSsid(lineWifi,2);

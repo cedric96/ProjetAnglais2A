@@ -59,6 +59,14 @@ public class ChoiceNiveauViewControler implements mainControler {
 		//on remets les points a 0
 		main.jeu.Points=0;
 		
+		if (main.jeu.typeDeQuestions==3){//on a choisi la culture
+			level1.setText("History");
+			level2.setText("Geography");
+			level3.setText("Fun Facts");
+			choose.setText("CHOOSE A CATEGORY");
+			
+		}
+		
 		
 		QuestionsChoisies=main.jeu.getQuestionChoisies();
 		

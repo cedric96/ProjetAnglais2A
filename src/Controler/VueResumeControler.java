@@ -1,8 +1,12 @@
 package Controler;
 
+import java.io.File;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.scene.text.Font;
 import Vues.MainWindow;
 
@@ -32,6 +36,9 @@ public class VueResumeControler implements mainControler {
 	@Override
 	public void initialize(MainWindow main) {
 		// TODO Auto-generated method stub
+		
+		//activer ou pas bouton retry
+		
 		this.main=main;
 		
 		//set des diff labels
@@ -43,12 +50,20 @@ public class VueResumeControler implements mainControler {
 		//setText
 		if (main.jeu.Points<20){
 			bravo.setText("Sorry      ");
+			
+			
 		}
 		else{
 			bravo.setText("Congrats      ");
+			final File file = new File("fileAudio/applause.mp3"); 
+	        Media son = new Media(file.toURI().toString()); 
+	      MediaPlayer  mediaPlayer = new MediaPlayer(son); 
+	      mediaPlayer.play();
 		}
 		nom.setText(main.joueur.getName()+" !");
 		point.setText(""+main.jeu.Points+ "/25");
+		
+		
 	}
 	
 	public void quitter(){
@@ -62,6 +77,7 @@ public class VueResumeControler implements mainControler {
 	public void otherLevel(){
 		main.changeScene(2);
 	}
+	
 	
 
 }
