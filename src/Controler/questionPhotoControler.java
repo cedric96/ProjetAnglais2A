@@ -170,6 +170,18 @@ public class questionPhotoControler implements mainControler {
 		
 	}
 	
+	public void level(){
+		main.changeScene(2);
+		
+	}
+	
+	public void exercice(){
+		main.changeScene(1);
+	}
+	public void player(){
+		main.changeScene(0);
+	}
+	
 	//les fonctions cases "i" permettent de desactiver toutes les autres quand 
 	//on clique sur une
 	public void case1(){

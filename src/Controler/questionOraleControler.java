@@ -217,4 +217,16 @@ public class questionOraleControler implements mainControler {
 		main.changeScene(1);
 	}
 	
+	public void level(){
+		main.changeScene(2);
+		
+	}
+	
+	public void exercice(){
+		main.changeScene(1);
+	}
+	public void player(){
+		main.changeScene(0);
+	}
+	
 }

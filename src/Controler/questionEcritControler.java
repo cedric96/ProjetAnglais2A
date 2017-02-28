@@ -63,7 +63,7 @@ public class questionEcritControler implements mainControler {
 		listCheck.add(case2);
 		listCheck.add(case3);
 		
-		juste.setFont((Font.loadFont("file:police/bravo.TTF", 30)));
+		//juste.setFont((Font.loadFont("file:police/bravo.TTF", 30)));
 		
 	
 	}
@@ -71,7 +71,7 @@ public class questionEcritControler implements mainControler {
 	public void  remplirLabel(int numQuest ){
 		questCourante=main.jeu.getJeuxEcrit().get(numQuest);
 		
-		question.setText(questCourante.getIntitule()+"  ?");
+		question.setText(questCourante.getIntitule());
 		rep1.setText(questCourante.getReponse(0));
 		rep2.setText(questCourante.getReponse(1));
 		rep3.setText(questCourante.getReponse(2));
@@ -193,6 +193,18 @@ public class questionEcritControler implements mainControler {
 	
 	public void backMenu(){
 		main.changeScene(1);
+	}
+	
+	public void level(){
+		main.changeScene(2);
+		
+	}
+	
+	public void exercice(){
+		main.changeScene(1);
+	}
+	public void player(){
+		main.changeScene(0);
 	}
 	
 }

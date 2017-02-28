@@ -11,6 +11,8 @@ import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.control.MenuButton;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.cell.ComboBoxListCell;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
@@ -32,6 +34,13 @@ public class ChoiceNiveauViewControler implements mainControler {
 	Button level3;
 	@FXML
 	Label choose;
+	
+	@FXML
+	MenuItem level;
+	@FXML
+	MenuItem exercice;
+	@FXML
+	MenuButton ReturnTo;
 	
 	ArrayList<Question>QuestionsChoisies;
 	//faireJeux(ArrayList<Question>QuestionsChoisies,int niveau)
@@ -96,11 +105,19 @@ public class ChoiceNiveauViewControler implements mainControler {
 	}
 	
 	//pour le retour au menu
-	public void backMenu(){
-		main.changeScene(1);
+	
+	
+	public void level(){
+		main.changeScene(2);
+		
 	}
 	
-	
+	public void exercice(){
+		main.changeScene(1);
+	}
+	public void player(){
+		main.changeScene(0);
+	}
 	
 	
 

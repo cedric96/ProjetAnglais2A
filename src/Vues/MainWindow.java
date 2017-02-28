@@ -95,6 +95,20 @@ public class MainWindow extends Application {
             controller = loader.getController();
             controller.initialize(this);
     	}
+    	else if (x==0){
+    		RacineAnglais.setCenter(null);
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(MainWindow.class.getResource("WelcomeView.fxml"));
+            try {
+				view = (AnchorPane) loader.load();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+            RacineAnglais.setCenter(view);
+            controller = loader.getController();
+            controller.initialize(this);
+    	}
     	else if (x==2){
     		RacineAnglais.setCenter(null);
             FXMLLoader loader = new FXMLLoader();
