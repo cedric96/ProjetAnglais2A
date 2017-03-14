@@ -76,6 +76,11 @@ public class ChoiceNiveauViewControler implements mainControler {
 			
 		}
 		
+		else if (main.jeu.typeDeQuestions==2){//on a choisi le listenning
+			level2.setVisible(false);
+			level2.setDisable(true);
+		}
+		
 		
 		QuestionsChoisies=main.jeu.getQuestionChoisies();
 		
@@ -84,7 +89,7 @@ public class ChoiceNiveauViewControler implements mainControler {
 	public void level1(){
 		
 		//listChoice.setCellFactory(ComboBoxListCell.forListView(items));
-		System.out.println("maman level 1");
+		
 		main.jeu.faireJeux(QuestionsChoisies,1);
 		main.changeScene(main.jeu.getTypeDeQuestions(),0);
 		
@@ -92,16 +97,20 @@ public class ChoiceNiveauViewControler implements mainControler {
 	public void level2(){
 		
 		//listChoice.setCellFactory(ComboBoxListCell.forListView(items));
-		System.out.println("maman level 2");
+		
 		main.jeu.faireJeux(QuestionsChoisies,2);
 		main.changeScene(main.jeu.getTypeDeQuestions(),0);
 	}
 	public void level3(){
+		if (main.jeu.getTypeDeQuestions()!=2){
 		System.out.println("maman level 3");
 		main.jeu.faireJeux(QuestionsChoisies,3);
 		main.changeScene(main.jeu.getTypeDeQuestions(),0);
 	
-		
+		}else{//questionSpeciale
+			main.jeu.faireJeux(QuestionsChoisies,3);
+			main.changeScene(4,0);
+		}
 	}
 	
 	//pour le retour au menu

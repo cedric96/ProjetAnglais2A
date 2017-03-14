@@ -190,6 +190,38 @@ public class MainWindow extends Application {
            ((questionPhotoControler) controller).remplirLabel(numQuestion);
     	
     	}
+    	if (x==4){//questionSpeciale
+    		RacineAnglais.setCenter(null);
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(MainWindow.class.getResource("questionSpecialeAccueil.fxml"));
+            try {
+				view = (AnchorPane) loader.load();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+            RacineAnglais.setCenter(view);
+            controller = loader.getController();
+            controller.initialize(this);
+           ((questionSpecialeAccueilControler) controller).remplirLabel(numQuestion);
+    	
+    	}
+    	if (x==5){
+    		RacineAnglais.setCenter(null);
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(MainWindow.class.getResource("questionSpeciale.fxml"));
+            try {
+				view = (AnchorPane) loader.load();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+            RacineAnglais.setCenter(view);
+            controller = loader.getController();
+            controller.initialize(this);
+           ((questionSpecialeControler) controller).remplirLabel(numQuestion);
+    	}
+    	
     }
     
 

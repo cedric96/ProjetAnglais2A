@@ -24,9 +24,9 @@
          <font>
             <Font size="18.0" />
          </font></Label>
-      <CheckBox fx:id="case1" focusTraversable="false" layoutX="446.0" layoutY="237.0" mnemonicParsing="false" onAction="#case1" prefHeight="21.0" prefWidth="18.0" />
-      <CheckBox fx:id="case2" focusTraversable="false" layoutX="446.0" layoutY="314.0" mnemonicParsing="false" onAction="#case2" prefHeight="21.0" prefWidth="21.0" />
-      <CheckBox fx:id="case3" focusTraversable="false" layoutX="446.0" layoutY="377.0" mnemonicParsing="false" onAction="#case3" prefHeight="34.0" prefWidth="21.0" />
+      <CheckBox fx:id="case1" focusTraversable="false" layoutX="548.0" layoutY="245.0" mnemonicParsing="false" onAction="#case1" prefHeight="21.0" prefWidth="18.0" />
+      <CheckBox fx:id="case2" focusTraversable="false" layoutX="548.0" layoutY="314.0" mnemonicParsing="false" onAction="#case2" prefHeight="21.0" prefWidth="21.0" />
+      <CheckBox fx:id="case3" focusTraversable="false" layoutX="548.0" layoutY="381.0" mnemonicParsing="false" onAction="#case3" prefHeight="34.0" prefWidth="21.0" />
       <Label alignment="CENTER" layoutX="104.0" layoutY="235.0" prefHeight="42.0" prefWidth="85.0" text="Answer 1 :" wrapText="true" />
       <Label alignment="CENTER" layoutX="104.0" layoutY="303.0" prefHeight="42.0" prefWidth="85.0" text="Answer 2 :" textAlignment="CENTER" wrapText="true" />
       <Label alignment="CENTER" layoutX="104.0" layoutY="376.0" prefHeight="42.0" prefWidth="85.0" text="Answer 3 :" wrapText="true" />
@@ -34,32 +34,32 @@
          <font>
             <Font name="Script MT Bold" size="30.0" />
          </font></TextArea>
-      <TextField fx:id="rep1" alignment="CENTER" editable="false" focusTraversable="false" layoutX="208.0" layoutY="232.0" prefHeight="30.0" prefWidth="204.0">
+      <TextField fx:id="rep1" alignment="CENTER" editable="false" focusTraversable="false" layoutX="208.0" layoutY="232.0" prefHeight="47.0" prefWidth="322.0">
          <font>
             <Font name="Sakkal Majalla" size="21.0" />
          </font>
       </TextField>
-      <TextField fx:id="rep2" alignment="CENTER" editable="false" focusTraversable="false" layoutX="208.0" layoutY="303.0" prefHeight="34.0" prefWidth="204.0">
+      <TextField fx:id="rep2" alignment="CENTER" editable="false" focusTraversable="false" layoutX="208.0" layoutY="303.0" prefHeight="51.0" prefWidth="322.0">
          <font>
             <Font name="Sakkal Majalla" size="22.0" />
          </font>
       </TextField>
-      <TextField fx:id="rep3" alignment="CENTER" editable="false" focusTraversable="false" layoutX="208.0" layoutY="372.0" prefHeight="42.0" prefWidth="204.0">
+      <TextField fx:id="rep3" alignment="CENTER" editable="false" focusTraversable="false" layoutX="208.0" layoutY="372.0" prefHeight="42.0" prefWidth="322.0">
          <font>
             <Font name="Sakkal Majalla" size="22.0" />
          </font>
       </TextField>
-      <Label fx:id="juste" alignment="TOP_LEFT" focusTraversable="false" layoutX="322.0" layoutY="63.0" prefHeight="30.0" prefWidth="248.0" text="Bonne Reponse !" textFill="#22ee0b" visible="false">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Label>
-      <Label fx:id="faux" focusTraversable="false" layoutX="310.0" layoutY="71.0" prefHeight="30.0" prefWidth="273.0" text="Mauvaise Reponse !" textFill="#fc0505" visible="false">
+      <Label fx:id="juste" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutX="254.0" layoutY="196.0" prefHeight="30.0" prefWidth="248.0" text="Bonne Reponse !" textFill="#0513fa" visible="false">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Button fx:id="next" focusTraversable="false" layoutX="558.0" layoutY="372.0" mnemonicParsing="false" onAction="#next" prefHeight="34.0" prefWidth="85.0" text="Next" textFill="#36803c">
+      <Label fx:id="faux" alignment="CENTER" focusTraversable="false" layoutX="254.0" layoutY="196.0" prefHeight="30.0" prefWidth="273.0" text="Mauvaise Reponse !" textFill="#fc0505" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="next" focusTraversable="false" layoutX="582.0" layoutY="406.0" mnemonicParsing="false" onAction="#next" prefHeight="34.0" prefWidth="85.0" text="Next" textFill="#36803c">
          <font>
             <Font name="Californian FB" size="18.0" />
          </font>

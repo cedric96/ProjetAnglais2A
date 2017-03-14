@@ -71,13 +71,15 @@ public class questionOraleControler implements mainControler {
 		listCheck.add(case2);
 		listCheck.add(case3);
 		
-		juste.setFont((Font.loadFont("file:police/bravo.TTF", 30)));
+		//juste.setFont((Font.loadFont("file:police/bravo.TTF", 30)));
+		
 		
 	
 		
 	}
 	
 	public void  remplirLabel(int numQuest ){
+		this.numQuest=numQuest;
 		questCourante=main.jeu.getJeuxOral().get(numQuest);
 		//System.out.println("QuestionCourante :"+questCourante.getIntitule());
 		//on instancie la musique
@@ -91,7 +93,8 @@ public class questionOraleControler implements mainControler {
 		rep2.setText(questCourante.getReponse(1));
 		rep3.setText(questCourante.getReponse(2));
 		
-		this.numQuest=numQuest;
+		//on lance la musique
+		this.start();
 		
 		
 	}
@@ -163,7 +166,7 @@ public class questionOraleControler implements mainControler {
 		}
 		else{
 			//System.out.println("Point "+main.jeu.Points);
-			main.changeScene(2);
+			main.changeScene(3);
 		}
 		
 	}

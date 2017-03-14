@@ -9,14 +9,30 @@ public class Question {
 	private String intitule="";
 	private String fichier="";
 	
+	
+	private String fichierTextSpecial="";
 	public Question() {
 		// TODO Auto-generated constructor stub
 	}
+	//constructeur pour le texte a remplir
+	public Question(String fichierAudio,String fichierText,String intitule,String rep1,String rep2,String rep3,int bonneRep) {
+		// TODO Auto-generated constructor stub
+		this.fichier=fichierAudio;//pour question ecrite et question orale
+		this.fichierTextSpecial=fichierText;
+		this.intitule=intitule;
+		reponses.add(rep1);
+		reponses.add(rep2);
+		reponses.add(rep3);
+		reponseJuste=bonneRep;
+		
+		
+	}
+	//constructeur question speciale
 	
 	//constructeur pour les musiques et les videos
 	public Question(String fichier,String intitule,String rep1,String rep2,String rep3,int bonneRep) {
 		// TODO Auto-generated constructor stub
-		this.fichier=fichier;
+		this.fichier=fichier;//pour question ecrite et question orale
 		this.intitule=intitule;
 		reponses.add(rep1);
 		reponses.add(rep2);
@@ -65,5 +81,10 @@ public class Question {
 	public String getLienFichier(){
 		return fichier;
 	}
+	
+	public String getLienFichierText(){
+		return fichierTextSpecial;
+	}
 
+	
 }
