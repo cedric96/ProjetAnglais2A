@@ -5,6 +5,8 @@ import java.io.File;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import Modeles.Question;
@@ -15,7 +17,8 @@ public class questionSpecialeAccueilControler implements mainControler {
 	MainWindow main;
 	Media son;
 	MediaPlayer mediaPlayer;
-	
+	@FXML
+	ImageView imageFond;
 	Question questCourante;
 	@FXML
 	Button play;
@@ -35,6 +38,8 @@ public class questionSpecialeAccueilControler implements mainControler {
 	public void initialize(MainWindow main) {
 		// TODO Auto-generated method stub
 		this.main=main;
+		Image image = new Image("file:images/blurred-background-7-min (1).jpeg");
+		imageFond.setImage(image);
 		sorry.setVisible(false);
 	}
 	

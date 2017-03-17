@@ -5,6 +5,8 @@ import java.io.File;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.text.Font;
@@ -28,6 +30,8 @@ public class VueResumeControler implements mainControler {
 	Button continuer;
 	@FXML
 	Button otherLevel;
+	@FXML
+	ImageView imageFond;
 	
 	public VueResumeControler() {
 		// TODO Auto-generated constructor stub
@@ -40,7 +44,8 @@ public class VueResumeControler implements mainControler {
 		//activer ou pas bouton retry
 		
 		this.main=main;
-		
+		Image image = new Image("file:images/blurred-background-7-min (1).jpeg");
+		imageFond.setImage(image);
 		//set des diff labels
 		bravo.setFont(Font.loadFont("file:police/accueil.TTF", 60));
 		nom.setFont(Font.loadFont("file:police/accueil.TTF", 60));

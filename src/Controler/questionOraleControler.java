@@ -11,6 +11,8 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.text.Font;
@@ -50,6 +52,8 @@ public class questionOraleControler implements mainControler {
 	Media son;
 	MediaPlayer mediaPlayer;
 	
+	@FXML
+	ImageView imageFond;
 	
 	int numQuest;
 	Question questCourante;
@@ -65,7 +69,8 @@ public class questionOraleControler implements mainControler {
 	public void initialize(MainWindow main) {
 		// TODO Auto-generated method stub
 		this.main=main;
-		
+		Image image = new Image("file:images/blurred-background-7-min (1).jpeg");
+		imageFond.setImage(image);
 		//je remplis bien mes checkBox dans l'ArrayList 
 		listCheck.add(case1);
 		listCheck.add(case2);

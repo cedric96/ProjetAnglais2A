@@ -10,6 +10,8 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.text.Font;
 
 public class questionSpecialeControler implements mainControler {
@@ -34,6 +36,8 @@ public class questionSpecialeControler implements mainControler {
 	CheckBox case3;
 	@FXML
 	Label erreur;
+	@FXML
+	ImageView imageFond;
 	
 	@FXML
 	Label juste;
@@ -59,7 +63,8 @@ public class questionSpecialeControler implements mainControler {
 	public void initialize(MainWindow main) {
 		// TODO Auto-generated method stub
 		this.main=main;
-		
+		Image image = new Image("file:images/blurred-background-7-min (1).jpeg");
+		imageFond.setImage(image);
 		//je remplis bien mes checkBox dans l'ArrayList 
 		listCheck.add(case1);
 		listCheck.add(case2);

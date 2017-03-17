@@ -38,7 +38,8 @@ public class questionPhotoControler implements mainControler {
 	@FXML
 	Label erreur;
 	
-	
+	@FXML
+	ImageView imageFond;
 	
 	@FXML
 	Label juste;
@@ -65,7 +66,8 @@ public class questionPhotoControler implements mainControler {
 	public void initialize(MainWindow main) {
 		// TODO Auto-generated method stub
 		this.main=main;
-		
+		Image image = new Image("file:images/blurred-background-7-min (1).jpeg");
+		imageFond.setImage(image);
 		//je remplis bien mes checkBox dans l'ArrayList 
 		listCheck.add(case1);
 		listCheck.add(case2);

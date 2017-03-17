@@ -14,6 +14,8 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.cell.ComboBoxListCell;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.CornerRadii;
@@ -41,6 +43,8 @@ public class ChoiceNiveauViewControler implements mainControler {
 	MenuItem exercice;
 	@FXML
 	MenuButton ReturnTo;
+	@FXML
+	ImageView imageFond;
 	
 	ArrayList<Question>QuestionsChoisies;
 	//faireJeux(ArrayList<Question>QuestionsChoisies,int niveau)
@@ -55,7 +59,8 @@ public class ChoiceNiveauViewControler implements mainControler {
 	public void initialize(MainWindow main) {
 		// TODO Auto-generated method stub
 		this.main=main;
-		
+		Image image = new Image("file:images/blurred-background-7-min (1).jpeg");
+		imageFond.setImage(image);
 		/*pour l'ecriture des labels*/
 		
 		choose.setFont(Font.loadFont("file:police/choose.ttf", 30));

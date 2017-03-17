@@ -10,6 +10,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.cell.ComboBoxListCell;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.CornerRadii;
@@ -33,7 +35,8 @@ public class ChoiceViewControler implements mainControler {
 	@FXML
 	Label welcome;
 	
-	
+	@FXML
+	ImageView imageFond;
 	
 	@FXML
 	Label nom;
@@ -47,6 +50,9 @@ public class ChoiceViewControler implements mainControler {
 	public void initialize(MainWindow main) {
 		// TODO Auto-generated method stub
 		this.main=main;
+		
+		Image image = new Image("file:images/blurred-background-7-min (1).jpeg");
+		imageFond.setImage(image);
 		
 		/*pour l'ecriture des labels*/
 		nom.setText(main.joueur.getName()+"  !");
