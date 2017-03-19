@@ -62,7 +62,6 @@
             <DropShadow />
          </effect>
       </Button>
-      <Button fx:id="start" layoutX="56.0" layoutY="137.0" mnemonicParsing="false" onAction="#start" prefHeight="47.0" prefWidth="126.0" text="Start/pause" />
       <MenuButton fx:id="ReturnTo" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" text="ReturnTo">
          <items>
             <MenuItem id="level" fx:id="level" mnemonicParsing="false" onAction="#level" text="Choose Level" />

@@ -174,7 +174,7 @@ public class MainWindow extends Application {
            ((questionOraleControler) controller).remplirLabel(numQuestion);
     	
     	}
-    	if (x==3){//pour question audio
+    	if (x==3){//pour question culture
     		RacineAnglais.setCenter(null);
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(MainWindow.class.getResource("questionPhotoView.fxml"));
@@ -206,7 +206,7 @@ public class MainWindow extends Application {
            ((questionSpecialeAccueilControler) controller).remplirLabel(numQuestion);
     	
     	}
-    	if (x==5){
+    	if (x==5){//long record
     		RacineAnglais.setCenter(null);
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(MainWindow.class.getResource("questionSpeciale.fxml"));
@@ -220,6 +220,21 @@ public class MainWindow extends Application {
             controller = loader.getController();
             controller.initialize(this);
            ((questionSpecialeControler) controller).remplirLabel(numQuestion);
+    	}
+    	if (x==6){//prononciation
+    		RacineAnglais.setCenter(null);
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(MainWindow.class.getResource("prononciationView.fxml"));
+            try {
+				view = (AnchorPane) loader.load();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+            RacineAnglais.setCenter(view);
+            controller = loader.getController();
+            controller.initialize(this);
+           ((prononciationControler) controller).remplirLabel(numQuestion);
     	}
     	
     }

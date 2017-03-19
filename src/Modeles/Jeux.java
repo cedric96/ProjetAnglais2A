@@ -119,7 +119,7 @@ public class Jeux {
 				 */
 				typeDeJeux=JeuxSpecial;
 				int compteur1=0;
-				int min1=10;int max1=12;
+				int min1=20;int max1=22;
 				int nbreAlea1=min1 + (int)(Math.random() * ((max1 - min1) + 1));
 				
 				questionChoisieSpeciale=questionOrales.get(nbreAlea1);

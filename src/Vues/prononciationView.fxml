@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controler.questionOraleControler">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controler.prononciationControler">
    <children>
       <ImageView fx:id="imageFond" fitHeight="548.0" fitWidth="748.0" layoutX="-25.0" layoutY="-27.0" pickOnBounds="true" />
       <Label fx:id="erreur" layoutX="334.0" layoutY="86.0" prefHeight="34.0" prefWidth="248.0" text="Cochez une seule reponse svp!" textFill="#fc0000" visible="false" wrapText="true">
@@ -69,5 +69,10 @@
             <MenuItem id="exercice" fx:id="player" mnemonicParsing="false" onAction="#player" text="Change Player" />
          </items>
       </MenuButton>
+      <Button fx:id="listen" layoutX="610.0" layoutY="316.0" mnemonicParsing="false" onAction="#listen" prefHeight="30.0" prefWidth="57.0" text="LISTEN" textFill="#2151d7" />
+      <Label fx:id="errorListen" alignment="CENTER" layoutX="252.0" layoutY="190.0" prefHeight="34.0" prefWidth="212.0" text="First try an answer !" textFill="#ff0101" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
    </children>
 </AnchorPane>

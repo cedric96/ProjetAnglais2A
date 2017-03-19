@@ -39,9 +39,6 @@ public class questionOraleControler implements mainControler {
 	Label erreur;
 	
 	@FXML
-	Button start;
-	
-	@FXML
 	Label juste;
 	@FXML
 	Label faux;

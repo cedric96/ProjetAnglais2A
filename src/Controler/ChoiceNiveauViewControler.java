@@ -82,8 +82,14 @@ public class ChoiceNiveauViewControler implements mainControler {
 		}
 		
 		else if (main.jeu.typeDeQuestions==2){//on a choisi le listenning
-			level2.setVisible(false);
-			level2.setDisable(true);
+			//level2.setVisible(false);
+			//level2.setDisable(true);
+			
+			level1.setText("Short recording");
+			//level3.setLayoutY(level2.getLayoutY()-3);
+			level2.setText("Prononciation");
+			level3.setText("Long recording");
+			
 		}
 		
 		
@@ -102,13 +108,20 @@ public class ChoiceNiveauViewControler implements mainControler {
 	public void level2(){
 		
 		//listChoice.setCellFactory(ComboBoxListCell.forListView(items));
-		
 		main.jeu.faireJeux(QuestionsChoisies,2);
-		main.changeScene(main.jeu.getTypeDeQuestions(),0);
+		if (main.jeu.getTypeDeQuestions()!=2){
+			
+			main.changeScene(main.jeu.getTypeDeQuestions(),0);
+		}
+		else{
+			
+			main.changeScene(6,0);
+		}
+		
 	}
 	public void level3(){
 		if (main.jeu.getTypeDeQuestions()!=2){
-		System.out.println("maman level 3");
+		
 		main.jeu.faireJeux(QuestionsChoisies,3);
 		main.changeScene(main.jeu.getTypeDeQuestions(),0);
 	
