@@ -68,7 +68,7 @@ public class questionSpecialeAccueilControler implements mainControler {
 	
 	public void next (){
 		mediaPlayer.stop();
-		System.out.println("imbecile");
+		
 		main.changeScene(5,0);
 	}
 

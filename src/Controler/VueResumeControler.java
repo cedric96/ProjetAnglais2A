@@ -9,6 +9,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import Vues.MainWindow;
 
@@ -32,6 +33,8 @@ public class VueResumeControler implements mainControler {
 	Button otherLevel;
 	@FXML
 	ImageView imageFond;
+	@FXML
+	ImageView smiley;
 	
 	public VueResumeControler() {
 		// TODO Auto-generated constructor stub
@@ -52,14 +55,20 @@ public class VueResumeControler implements mainControler {
 		tuAs.setFont(Font.loadFont("file:police/accueil.TTF", 60));
 		point.setFont(Font.loadFont("file:police/accueil.TTF", 60));
 		
+		Image imageSmiley;
 		//setText
 		if (main.jeu.Points<20){
 			bravo.setText("Sorry      ");
-			
+			 bravo.setTextFill(Color.web("#f11501"));
+			 tuAs.setTextFill(Color.web("#f11501"));
+			 imageSmiley=new Image("file:images/triste.png");
+			 smiley.setImage(imageSmiley);
 			
 		}
 		else{
 			bravo.setText("Congrats      ");
+			imageSmiley=new Image("file:images/veryGood.png");
+			smiley.setImage(imageSmiley);
 			final File file = new File("fileAudio/applause.mp3"); 
 	        Media son = new Media(file.toURI().toString()); 
 	      MediaPlayer  mediaPlayer = new MediaPlayer(son); 

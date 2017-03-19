@@ -9,8 +9,8 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controler.VueResumeControler">
    <children>
       <ImageView fx:id="imageFond" fitHeight="540.0" fitWidth="760.0" layoutX="-37.0" layoutY="-34.0" pickOnBounds="true" />
-      <Label fx:id="bravo" alignment="TOP_CENTER" layoutX="14.0" layoutY="30.0" prefHeight="77.0" prefWidth="456.0" text="Congrats !   " textFill="#1cb217" />
-      <Label fx:id="nom" alignment="TOP_CENTER" focusTraversable="false" layoutX="337.0" layoutY="22.0" prefHeight="93.0" prefWidth="279.0" text="Label" textFill="#2f52c2" />
+      <Label fx:id="bravo" alignment="TOP_CENTER" layoutY="21.0" prefHeight="77.0" prefWidth="443.0" text="Congrats !   " textFill="#1cb217" />
+      <Label fx:id="nom" alignment="TOP_CENTER" focusTraversable="false" layoutX="331.0" layoutY="21.0" prefHeight="93.0" prefWidth="279.0" text="Label" textFill="#2f52c2" />
       <Label fx:id="tuAs" alignment="TOP_CENTER" layoutY="176.0" prefHeight="83.0" prefWidth="350.0" text="You scored   " textFill="#1cb217">
          <font>
             <Font name="Trebuchet MS" size="18.0" />
@@ -19,5 +19,6 @@
       <Button fx:id="continuer" layoutX="272.0" layoutY="341.0" mnemonicParsing="false" onAction="#continuer" prefHeight="51.0" prefWidth="131.0" text="Choose Exercice" textFill="#c212bf" />
       <Button fx:id="quitter" layoutX="491.0" layoutY="341.0" mnemonicParsing="false" onAction="#quitter" prefHeight="51.0" prefWidth="137.0" text="Quit" textFill="#c212bf" />
       <Button fx:id="otherLevel" layoutX="60.0" layoutY="341.0" mnemonicParsing="false" onAction="#otherLevel" prefHeight="51.0" prefWidth="131.0" text="Choose level" textFill="#c212bf" />
+      <ImageView fx:id="smiley" fitHeight="69.0" fitWidth="111.0" layoutX="541.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>

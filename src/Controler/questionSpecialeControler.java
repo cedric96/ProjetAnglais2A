@@ -77,7 +77,7 @@ public class questionSpecialeControler implements mainControler {
 	
 	public void  remplirLabel(int numQuest ){
 		questCourante=main.jeu.getJeuxSpecial().get(numQuest);
-		System.out.println(main.jeu.getJeuxSpecial().get(0).getIntitule());
+		
 		question.setText(questCourante.getIntitule());
 		//System.out.println(questCourante.getIntitule());
 		rep1.setText(questCourante.getReponse(0));
@@ -157,7 +157,7 @@ public class questionSpecialeControler implements mainControler {
 			
 		}
 		else{
-			System.out.println("Point "+main.jeu.Points);
+			
 			main.changeScene(3);
 		}
 		

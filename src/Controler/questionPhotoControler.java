@@ -73,7 +73,7 @@ public class questionPhotoControler implements mainControler {
 		listCheck.add(case2);
 		listCheck.add(case3);
 		
-		juste.setFont((Font.loadFont("file:police/bravo.TTF", 30)));
+		//juste.setFont((Font.loadFont("file:police/bravo.TTF", 30)));
 		
 	
 		
